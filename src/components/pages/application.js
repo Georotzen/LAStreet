@@ -1,12 +1,11 @@
 import React from 'react';
 import './application.css'
-import Navbar from '../navbar';
-import Chart from './chart';
-import { Button } from '../button';
-import Map from './map';
-import StreetMap from './streetmap';
-import RenderMapillary from './mapillary';
+import StreetSearch from './filtersearch';
+import NavbarDark from './navbardark';
+import Map from './map.js'
 import Update from './updateMapillary';
+import './updateMapillary.css';
+import CarouselFade from './carouselfade'
 
 function Application () {
     return (
@@ -14,17 +13,28 @@ function Application () {
             <div className='intro'>
                 <h1>Hillside Street Prioritization Application</h1>
             </div>
-            <div className='charts'>
-                <div className='chart'>
-                    <Chart/>
-                </div>
+
+            <div className='carousel'>
+            <CarouselFade/>
             </div>
-            <div className='map'>
-                <div id="leafletTooltip"></div>
+
+            <div className='text-center'>
                 <Map/>
-                {/* <RenderMapillary/> */}
+           </div>
+
+            <div className='streetView2'>
+            <NavbarDark/>
+            </div>
+
+            <div className='btnSearch'>
+            <StreetSearch/>
+            </div>
+
+            <div className='geoMargin'>
                 <Update/>
             </div>
+         {/* <init></init> */}
+         {/* <RenderMapillary/> */}
         </div>
     );
 }
