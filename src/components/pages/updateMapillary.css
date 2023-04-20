@@ -1,0 +1,22 @@
+.geoCenter {
+    margin: auto;
+    width: 100%;
+    border: 3px solid rgb(17, 2, 83);
+    padding: 10px;
+   /* text-align: center; */ 
+
+}
+
+.geoMargin {
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.gws {
+    margin: auto;
+    width: 100%;
+    border: 3px solid rgb(17, 2, 83);
+    padding: 10px;
+    text-align: center;
+
+}
