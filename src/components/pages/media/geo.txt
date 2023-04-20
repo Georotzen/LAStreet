@@ -1,0 +1,5 @@
+After clicking the “creating a new file” link you’ll be taken to the file creation dialog. 
+Here, you’ll be facing a blank input field where one typically types the name of the new file being created.
+Type the desired name of your new folder followed by a forward slash. 
+After the forward-slash character is detected, Github will automatically generate a new input field for the file, 
+while recognizing the first input as a new folder name.
