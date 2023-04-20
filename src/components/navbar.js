@@ -1,12 +1,14 @@
 import React, {useState, useEffect} from 'react';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import { HashLink } from "react-router-hash-link";
 import './navbar.css';
-import {Button} from './button';
+// import {Button} from './button';
 
 function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
+
+
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
@@ -28,7 +30,7 @@ function Navbar() {
 
     return (
         <>
-            <nav className='navbar'>
+            <nav className='navbar fixed-top'>
                 <div className='navbar-container'>
                     <HashLink to='/' className="navbar-logo" onClick={closeMobileMenu}>
                         HSPA 
@@ -53,20 +55,13 @@ function Navbar() {
                             </HashLink>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>GET STARTED</Button>}
+                {/*    {button && <Button buttonStyle='btn--outline'>GET STARTED</Button>} */}
                 </div>
             </nav>
         </>
     )
 }
 
-const STYLES = ['navbar--white', 'navbar--blue'];
+// const STYLES = ['navbar--white', 'navbar--blue'];
 
 export default Navbar;
-// export default Navbar = ({barStyle}) => {
-//     const checkbarStyle = STYLES.includes(barStyle) ? barStyle : STYLES[0];
-//     return (
-//     <Navbar
-//         className={`navbar ${checkbarStyle} `}>
-//     </Navbar>);
-// }
